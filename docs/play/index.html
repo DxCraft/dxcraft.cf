@@ -89,7 +89,7 @@ Play
 <div class="col-md-6 mt-2 mt-md-0">
 <div>
 <b>Players:</b>
-<span id="data-player-count">89<small class="text-muted">/200</small></span>
+<span id="data-player-count">0x<small class="text-muted">/5000</small></span>
 </div>
 <div>
 <b>Version:</b>
@@ -104,6 +104,17 @@ Play
 </div>
 </div>
 </div>
+<script src="https://oc.tc/assets/js/play-fallback.js"></script>
+<script type="text/javascript">
+  const input = {
+    serverAddress: 'play.dxcraft.tk',
+    apiUrl: 'https://eu.mc-api.net/v3/server/ping/',
+    mapImagesUrl: 'https://raw.githubusercontent.com/DxCraft/dxcraft.github.io/master/assets/img/maps/',
+    playerAvatarsUrl: 'https://crafatar.com/avatars/'
+  };
+
+  setInterval(getServerStatus(input), 60 * 1000);
+</script>
 </main>
 <footer>
 <div class="container">
